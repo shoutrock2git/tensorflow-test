@@ -1,0 +1,55 @@
+courser　machine-learning
+https://www.coursera.org/
+
+朱鷺の杜Wiki
+http://ibisforest.org/index.php?FrontPage
+
+高校数学の美しい物語
+http://mathtrain.jp/
+
+機械学習、信号解析、ディープラーニングの勉強
+http://s0sem0y.hatenablog.com/archive
+
+MNIST for Beginnerの数学的な意味合い - neural netの日記
+http://neuralnet.hatenablog.jp/entry/2016/04/20/005417
+http://neuralnet.hatenablog.jp/entry/2016/03/29/090712
+
+特にプログラマーでもデータサイエンティストでもないけど、Tensorflowを１ヶ月触ったので超分かりやすく解説
+http://qiita.com/tawago/items/c977c79b76c5979874e8#3-hello-world%E7%9A%84%E3%81%AAmnist-%E3%83%93%E3%82%AE%E3%83%8A%E3%83%BC%E7%B7%A8
+
+機械学習をゼロから１ヶ月勉強し続けた結果
+http://qiita.com/junichiro/items/3457e33e502086a200f1
+http://qiita.com/junichiro/items/ee50af10df77d52cd432
+
+TensorFlowチュートリアル - ML初心者のためのMNIST(翻訳)
+http://qiita.com/KojiOhki/items/ff6ae04d6cf02f1b6edf
+
+DeepLearning - 田中TOM氏
+https://www.youtube.com/playlist?list=PLJrcxxeDeb81R_i00hqBo-YLd4Aw2BDvj
+
+高卒でもわかる機械学習
+http://hokuts.com/2015/11/24/ml1_func/
+
+ニューラルネットワーク入門
+http://www-ailab.elcom.nitech.ac.jp/lecture/neuro/menu.html
+
+パーセプトロンとは
+http://qiita.com/nishiy-k/items/1e795f92a99422d4ba7b
+
+Tensorflowのチュートリアルを通して、人工知能の原理について学習する
+http://qiita.com/jintaka1989/items/3b70b5c5541620536fa2
+
+ディープラーニングの原理、ニューラルネットワークの原理の入門の入門
+http://qiita.com/jintaka1989/items/17c9ddd571b9b080828f#_reference-b59c96a4e3d56b2c190c
+
+中学生にも分かるTensorflow入門　その１
+http://qiita.com/EtsuroHONDA/items/02635dc3026e29f3cb41
+
+機械学習-スタンフォード大学の講義から
+http://www.techscore.com/blog/2012/07/03/machine-learning-stanford-3/
+
+TensorflowでCNNを作る際に使いそうな関数を列挙してみた
+http://qiita.com/tadOne/items/b484ce9f973a9f80036e#tfreduce_meaninput_tensor-reduction_indicesnone-keep_dimsfalse-namenone
+
+[TF]TensorflowのAPIについて
+http://qiita.com/supersaiakujin/items/464cc053418e9a37fa7b
