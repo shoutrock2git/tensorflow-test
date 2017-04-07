@@ -3,6 +3,9 @@ mytensors
 Tensorflowの勉強記録、コードメモとか<br>
 参考にさせていただいたサイト様ブログ様に圧倒的感謝<br>
 <br>
+/text.txt<br>
+学習の参考にしたサイトのURLまとめ<br>
+<br>
 /mnist_tutorial　 MNISTforBeginnerのチュートリアル<br>
 https://www.tensorflow.org/get_started/mnist/beginners<br>
 http://qiita.com/uramonk/items/c207c948ccb6cd0a1346<br>
