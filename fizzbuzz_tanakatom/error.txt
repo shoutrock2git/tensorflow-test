@@ -20,5 +20,4 @@ softmaxの引数を間違えて labels=py_x , logits=Y と逆に書いてしま�
 勾配降下法できない変数が入ってるとでるのかな？
 
 
-
 【app2.py】
