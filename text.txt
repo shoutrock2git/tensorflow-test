@@ -1,4 +1,4 @@
-courser　machine-learning
+coursera　: machine-learningコース
 https://www.coursera.org/
 
 朱鷺の杜Wiki
@@ -53,3 +53,12 @@ http://qiita.com/tadOne/items/b484ce9f973a9f80036e#tfreduce_meaninput_tensor-red
 
 [TF]TensorflowのAPIについて
 http://qiita.com/supersaiakujin/items/464cc053418e9a37fa7b
+
+[TensorFlow] APIドキュメントを眺める -Math編-
+http://dev.classmethod.jp/machine-learning/tensorflow-math/
+
+TensorFlow : ML 初心者向けの MNIST （コード解説）
+http://tensorflow.classcat.com/2016/03/09/tensorflow-cc-mnist-for-ml-beginners/
+
+TensorFlow 1.0.0 リリースノート
+http://tensorflow.classcat.com/2017/02/16/tensorflow-1-0-0-release-note/

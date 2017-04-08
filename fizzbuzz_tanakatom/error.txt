@@ -1,0 +1,24 @@
+【app.py】
+>>>ValueError: Only call `softmax_cross_entropy_with_logits` with named arguments (labels=..., logits=..., ...)
+0.12から1.0へのアップデートで書き方が変わったらしい？
+https://github.com/ibab/tensorflow-wavenet/issues/223
+1.0のリリースノートによるとsoftmax系の引数順序に変更があったそうなので、それがエラーの原因？
+http://tensorflow.classcat.com/2017/02/16/tensorflow-1-0-0-release-note/
+
+(エラー)softmax_cross_entropy_with_logits(py_x, Y)
+(修正)softmax_cross_entropy_with_logits(labels=Y, logits=py_x)
+
+
+>>>ValueError: No gradients provided for any variable, check your graph for ops that do not support gradients, between variables
+['Tensor("Variable/read:0", shape=(10, 100), dtype=float32)'
+, 'Tensor("Variable_1/read:0", shape=(100, 4), dtype=float32)']
+and loss Tensor("Mean:0", shape=(), dtype=float32).
+任意の変数にグラデーション(勾配)はありません。
+変数[A,B]、および損失テンソル(損失関数:cost)の間で、勾配をサポートしていないオプションのグラフを確認してください。
+
+softmaxの引数を間違えて labels=py_x , logits=Y と逆に書いてしまったときにでたエラー
+勾配降下法できない変数が入ってるとでるのかな？
+
+
+
+【app2.py】
