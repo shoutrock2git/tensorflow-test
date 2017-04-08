@@ -10,7 +10,9 @@ Tensorflowの勉強記録、コードメモとか<br>
 https://www.tensorflow.org/get_started/mnist/beginners<br>
 http://qiita.com/uramonk/items/c207c948ccb6cd0a1346<br>
 <br>
-/fizzbuzz_tanakatom　　田中TOM氏のFizzBuzz
+/fizzbuzz_tanakatom　　田中TOM氏のFizzBuzz<br>
 https://www.youtube.com/watch?v=X-ulU-HCNf8<br>
 https://gist.github.com/monisoi/6ffb32db908fd7565112f09bc71d3ad4<br>
+解説おすすめ↓<br>
+http://yaju3d.hatenablog.jp/entry/2016/06/05/234113<br>
 <br>
