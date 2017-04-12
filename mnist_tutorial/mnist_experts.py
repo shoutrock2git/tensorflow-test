@@ -37,12 +37,12 @@ y_ = tf.placeholder("float", shape=[None, 10])
 
 ####################################################################################
 # 多層畳み込みネットワークの構築
-# 深層畳み込み
 ####################################################################################
 
 # 重みを初期化するメソッド
 # truncated_normal（切断正規分布）とは正規分布の左右を切り取ったもの
 # 重みが0にならないようにしている
+# 適度にノイズを含んだ（対称性の除去と勾配ゼロ防止のため）重み行列作成関数
 def weight_variable(shape):
   initial = tf.truncated_normal(shape, stddev=0.1)
   return tf.Variable(initial)
@@ -65,31 +65,33 @@ def max_pool_2x2(x):
 ### 第一畳み込み層 ####################################################################
 
 # 重みの初期化
-W_conv1 = weight_variable([5, 5, 1, 32])
+W_conv1 = weight_variable([5, 5, 1, 32])#畳み込み層
 b_conv1 = bias_variable([32])
 x_image = tf.reshape(x, [-1,28,28,1])
 h_conv1 = tf.nn.relu(conv2d(x_image, W_conv1) + b_conv1)
-h_pool1 = max_pool_2x2(h_conv1)
+h_pool1 = max_pool_2x2(h_conv1)#プーリング層
 
 ### 第二畳み込み層 ####################################################################
 
 # 重みの初期化
 # 第一層で出力が32だったので、入力チャンネルは32となる
-W_conv2 = weight_variable([5, 5, 32, 64])
+W_conv2 = weight_variable([5, 5, 32, 64])#畳み込み層
 b_conv2 = bias_variable([64])
 h_conv2 = tf.nn.relu(conv2d(h_pool1, W_conv2) + b_conv2)
-h_pool2 = max_pool_2x2(h_conv2)
+h_pool2 = max_pool_2x2(h_conv2)#プーリング層
 
 ### 密に接続された層 ##################################################################
 
 # 重みの初期化
 # 第二層で出力が64だったので、入力チャンネルは64となる
+# 全結合層
 W_fc1 = weight_variable([7 * 7 * 64, 1024])
 b_fc1 = bias_variable([1024])
 h_pool2_flat = tf.reshape(h_pool2, [-1, 7*7*64])
 h_fc1 = tf.nn.relu(tf.matmul(h_pool2_flat, W_fc1) + b_fc1)
 
 ### Dropout ########################################################################
+# 過学習制御
 keep_prob = tf.placeholder("float")
 h_fc1_drop = tf.nn.dropout(h_fc1, keep_prob)
 
@@ -132,6 +134,7 @@ for i in range(20000):
   train_step.run(feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
 print("--- 多層畳み込みネットワークによる訓練終了 ---")
 
+#error gpu(win)???
 print("test accuracy %g"%accuracy.eval(feed_dict={x: mnist.test.images, y_: mnist.test.labels, keep_prob: 1.0}))
 
 # 終了時刻

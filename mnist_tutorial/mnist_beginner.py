@@ -46,7 +46,7 @@ b = tf.Variable(tf.zeros([10]))
 y = tf.nn.softmax(tf.matmul(x, W) + b)
 
 # 交差エントロピー
-# y_は正解データのラベル
+# y_は正解データのラベル(0-9の数字の個数)→?行10列の行列
 y_ = tf.placeholder(tf.float32, [None, 10])
 cross_entropy = -tf.reduce_sum(y_*tf.log(y))
 
