@@ -21,3 +21,7 @@ Tensorflowの勉強記録、コードメモとか<br>
   http://yaju3d.hatenablog.jp/entry/2016/06/05/234113<br>
   TensorFlowコトハジメ 偶数と奇数に分類(even_odd)<br>
   http://yaju3d.hatenablog.jp/entry/2016/11/10/014833<br>
+<br>
+/idol-classify
+  画像判別、とりあえず定番のアイドルで<br>
+  <br>
