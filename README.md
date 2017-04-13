@@ -22,6 +22,13 @@ Tensorflowの勉強記録、コードメモとか<br>
   TensorFlowコトハジメ 偶数と奇数に分類(even_odd)<br>
   http://yaju3d.hatenablog.jp/entry/2016/11/10/014833<br>
 <br>
-/idol-classify
+/idol-classify<br>
   画像判別、とりあえず定番のアイドルで<br>
-  <br>
+  (製作中)タスク<br>
+  【データセット作り編】<br>
+  ・自動画像収集<br>
+  ・画像から顔をトリミング<br>
+    顔が傾いてると認識してくれない問題、リサイズ問題<br>
+  【学習編】<br>
+  ・<br>
+  <br>
